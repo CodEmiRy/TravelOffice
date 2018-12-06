@@ -23,10 +23,11 @@ public class Customer {
 
     public String getInfo() {
 
-        return "Customer" + "\n" +
-                "Name: " + name +
-                "" + "\n" + trip.getInfo() +
-                ", " + "\n" + address.getInfo() + "."
-                ;
+            return "Customer" + "\n" +
+                    "Name: " + name +
+                    "" + "\n" + trip.getInfo() +
+                    ", " + "\n" + address.getInfo() + "."
+                    ;
+
     }
 }
