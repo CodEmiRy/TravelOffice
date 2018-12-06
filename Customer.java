@@ -2,9 +2,9 @@ package org.travel;
 
 public class Customer {
 
-    String name;
-    Trip trip;
-    Address address;
+    private String name;
+    private Trip trip;
+    private Address address;
 
 
     public Customer(String name) {
@@ -20,13 +20,13 @@ public class Customer {
         trip = tri;
     }
 
-
-    public String getInfo() {
+    @Override
+    public String toString() {
 
             return "Customer" + "\n" +
                     "Name: " + name +
-                    "" + "\n" + trip.getInfo() +
-                    ", " + "\n" + address.getInfo() + "."
+                    "" + "\n" + trip.toString() +
+                    ", " + "\n" + address.toString() + "."
                     ;
 
     }

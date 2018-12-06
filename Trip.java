@@ -1,9 +1,11 @@
 package org.travel;
 
 public class Trip {
-    Date start;
-    Date end;
-    String destination;
+
+    private Date start;
+    private Date end;
+    private String destination;
+    private double price;
 
     public Trip(Date start, Date end, String destination) {
         this.start = start;
@@ -11,11 +13,23 @@ public class Trip {
         this.destination = destination;
     }
 
-
-    public String getInfo() {
+    @Override
+    public String toString() {
         return "Trip: " +"\n    -"+
-                "Start " + start.getInfo() +"\n    -"+
-                "End " + end.getInfo() +"\n    -"+
-                "Destination: " + destination ;
+                "Start " + start.toString() +"\n    -"+
+                "End " + end.toString() +"\n    -"+
+                "Destination: " + destination +"\n    -"+
+                "Price: " + price;
     }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+
+
 }
