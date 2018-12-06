@@ -2,9 +2,9 @@ package org.travel;
 
 public class Address {
 
-    String zip;
-    String cit;
-    String street;
+    private String zip;
+    private String cit;
+    private String street;
 
 
     public Address(String zip, String cit, String street) {
@@ -13,8 +13,8 @@ public class Address {
         this.street = street;
     }
 
-
-    public String getInfo() {
+    @Override
+    public String toString() {
         return "Address: " +
                 "zip=" + zip +
                 ", cit=" + cit +

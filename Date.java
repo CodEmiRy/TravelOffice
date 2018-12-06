@@ -2,9 +2,9 @@ package org.travel;
 
 public class Date {
 
-    int rok;
-    int miesiac;
-    int dzien;
+    private int rok;
+    private int miesiac;
+    private int dzien;
 
 
     public Date(int rok, int miesiac, int dzien) {
@@ -14,8 +14,8 @@ public class Date {
     }
 
 
-
-    public String getInfo() {
+    @Override
+    public String toString() {
         return "Date: " +
                 "rok= " + rok +
                 ", miesiac= " + miesiac +

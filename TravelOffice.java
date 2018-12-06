@@ -36,15 +36,15 @@ public class TravelOffice {
         return "Obecnie jest " + customers.length + " zapisanych osób w tablicy.";
     }
 
-
-    public String getInfo() {
+    @Override
+    public String toString() {
         String info = "Zapisane osoby: ";
 
         for (int i = 0; i < customers.length; i++) {
             if (customers[i] == null) {
                 break;
             } else {
-                info += customers[i].getInfo();
+                info += customers[i].toString();
             }
         }
         return info;
