@@ -20,6 +20,10 @@ public class Customer {
         trip = tri;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
 
